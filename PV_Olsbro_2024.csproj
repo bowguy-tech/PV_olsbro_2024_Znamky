@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75E36EEA-7E33-49A1-B824-9F6E87C7321E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PV_Olsbro_2024</RootNamespace>
+    <AssemblyName>PV_Olsbro_2024</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBSingelton.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormError.Designer.cs">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grade.cs" />
+    <Compile Include="GradeGroup.cs" />
+    <Compile Include="Iinstance.cs" />
+    <Compile Include="Imanager.cs" />
+    <Compile Include="InstanceClass.cs" />
+    <Compile Include="InstanceKurz.cs" />
+    <Compile Include="InstanceStudent.cs" />
+    <Compile Include="InstanceTeacher.cs" />
+    <Compile Include="Irole.cs" />
+    <Compile Include="ManagerClass.cs" />
+    <Compile Include="ManagerGrades.cs" />
+    <Compile Include="ManagerKurz.cs" />
+    <Compile Include="ManagerStudent.cs" />
+    <Compile Include="ManagerTeacher.cs" />
+    <Compile Include="MasterManager.cs" />
+    <Compile Include="NavigationManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedVariables.cs" />
+    <Compile Include="UCgradeBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCgradeBlock.Designer.cs">
+      <DependentUpon>UCgradeBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCgradeLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCgradeLine.Designer.cs">
+      <DependentUpon>UCgradeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCkurz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCkurz.Designer.cs">
+      <DependentUpon>UCkurz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCkurzycs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCkurzycs.Designer.cs">
+      <DependentUpon>UCkurzycs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCgrades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCgrades.Designer.cs">
+      <DependentUpon>UCgrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStudentLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStudentLine.Designer.cs">
+      <DependentUpon>UCStudentLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtrida.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtrida.Designer.cs">
+      <DependentUpon>UCtrida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XMLReader.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormError.resx">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UCgradeBlock.resx">
+      <DependentUpon>UCgradeBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCgradeLine.resx">
+      <DependentUpon>UCgradeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCkurz.resx">
+      <DependentUpon>UCkurz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCkurzycs.resx">
+      <DependentUpon>UCkurzycs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCgrades.resx">
+      <DependentUpon>UCgrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStudentLine.resx">
+      <DependentUpon>UCStudentLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtrida.resx">
+      <DependentUpon>UCtrida.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="connections.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
