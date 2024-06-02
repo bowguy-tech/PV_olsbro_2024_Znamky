@@ -26,6 +26,7 @@ Database diagram:
 |teacher|teacher1|Password123|
 
 
-
+----------------------------
 Thank you for reading
+
 and I hope you'll give me a good grade :P
