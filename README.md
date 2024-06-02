@@ -7,6 +7,9 @@ It is a school database for viewing grades of each students in differents course
 
 It uses a __database__ and the __Dao design pattern__
 
+
+__100%__ of the program was written by __me__! (no GPT, no tutorial)
+
 # database
 This database was designed and createad by me with the help of __Mrs. Kantnerová__
 
@@ -24,5 +27,5 @@ Database diagram:
 
 
 
-
-please give me a good grade :P
+Thank you for reading
+and I hope you'll give me a good grade :P
